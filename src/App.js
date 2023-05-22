@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Count from './CustomHook/Count';
+import Count2 from './CustomHook/Count2';
+
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <UserContext.Provider value={'cj'}>
+        <ChannelContext.Provider value={'vallo'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      <Count />
+      <Count2 />
     </div>
   );
 }
